@@ -10,12 +10,12 @@ import com.springboot.interceptor.RequestHeaderInterceptor;
 @Configuration
 public class StudentConfig implements WebMvcConfigurer {
 
-	@Autowired
-	private RequestHeaderInterceptor requestHeaderInterceptor;
+    @Autowired
+    private RequestHeaderInterceptor requestHeaderInterceptor;
 
-	@Override
-	public void addInterceptors(InterceptorRegistry registry) {
-		// TODO Auto-generated method stub
-		registry.addInterceptor(requestHeaderInterceptor);
-	}
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        // TODO Auto-generated method stub
+        registry.addInterceptor(requestHeaderInterceptor);
+    }
 }
